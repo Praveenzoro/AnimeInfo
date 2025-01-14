@@ -1,0 +1,559 @@
+
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/Images/solo2.jpg");
+    
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+ 
+
+    background-attachment: fixed;
+  
+}
+
+.bg {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    z-index: 1; 
+    overflow: hidden; 
+}
+
+.bgm {
+    width: auto; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.whole {
+    position: absolute; 
+    top: 50%; 
+    left: 55%;
+    transform: translate(-50%, -50%); 
+
+   width: fit-content;
+   height: fit-content;
+    z-index: 2; 
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px; 
+    margin-top: -100px;
+    
+}
+
+
+.post {
+    position: relative;
+    width: 400px; 
+    height: 200px; 
+    padding: 20px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+
+.post-expanded {
+    width: 1400px;
+    height: 900px; 
+    padding: 40px;
+    overflow: scroll; 
+    border-radius: 0px;
+}
+
+
+
+form {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.btn {
+    height: 50px;
+    width: 100px; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    padding: 10px 15px;
+    border: none;
+    background: linear-gradient(135deg, #6c7374, #3f3f3f); 
+    color: #ffffff; 
+    border-radius: 5px; 
+    cursor: pointer;
+    box-shadow: rgba(20, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s ease;
+  }
+  
+
+  .btn:hover {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
+    color: white; 
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+
+  .btn:active {
+    transform: scale(0.95); 
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+  }
+  
+.search{
+    
+    display: flex;
+     align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 6px;
+}
+.inp {
+    height: 50px;
+    width: 90px;
+
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    padding: 5px 10px; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.infos {
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+
+.ranimg{
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #333; 
+}
+.first{
+    height: 1200px;
+display: inline-block;
+width: 90%;
+flex-direction: column;
+text-align: center;
+background-color: rgb(255, 255, 255);
+padding: 50px;
+border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.first >img{
+    height: 400px;
+    width: 370px;
+    float: right;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    
+}
+.second{
+
+   
+}
+.second1{
+    
+    height: 1200px;
+    overflow-x: scroll;
+}
+
+.bc{
+ background-color: rgb(32, 32, 32);
+ padding: 20px;
+ color: white;
+ 
+ box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+ width: 200px;
+ }
+ .title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #6c7374, #3f3f3f); 
+    color: #222; /* Darker tone for focus */
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+ 
+ }
+
+ .image-item {
+    display: flex;
+    flex-direction: row;
+
+    margin: 10px;
+    width: 200px;
+}
+.images-container {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-Y: scroll;
+    margin-bottom: 10px;
+    gap: 8px;
+
+
+}
+
+.images-container::-webkit-scrollbar {
+
+}
+.anime-image {
+    width: 250px;
+    height: 370px;
+    border-radius: 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: transform 0.3s ease;
+    border-radius: 5px
+}
+.anime-main-image {
+    border-radius: 0px;
+    transition: transform 0.3s ease;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.anime-image:hover {
+    transform: scale(1.1);
+}
+.anime-main-image:hover {
+    transform: scale(0.9);
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+
+
+.syn{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #000000;
+    text-align: justify;
+    margin: 15px 0;
+text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.trailer, .airing {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Anime Image */
+.anime-main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    
+    margin: 15px 10PX;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-main-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  
+  /* Data (e.g., actual values like "24 min" or "TV") */
+  .data {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #000000;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .infos >h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    text-align:  center;
+    text-transform: uppercase;
+  }
+
+  .trailer> data{
+    color: white;
+  }
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-close-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .popup-close-btn:hover {
+    background: #d9363e;
+  }
+  
+
+@media (max-width: 1024px) {
+    .post {
+        width: 600px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .whole {
+        top: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .post {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .bgm {
+        height: auto;
+        width: 100%;
+    }
+
+    .btn, .inp {
+        height: 40px;
+        width: 100px;
+        font-size: medium;
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 375px) {
+ 
+    .post {
+        width: 340px;
+        height: 600px;
+       display: flex;
+       flex-direction: column;
+       right: 16px;
+    
+     bottom: 18px;
+
+     overflow-x: hidden;
+
+     flex-direction: column;
+    }
+
+    .post {
+        position: relative;
+        width: 300px; 
+        height: 200px; 
+        padding: 20px;
+        margin: 20px auto;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        
+        overflow: hidden;
+        border-radius: 5px;
+        transition: all 0.5s ease; 
+    }
+    
+
+    .post-expanded {
+        width: 340px;
+        height: 600px;
+       display: flex;
+       flex-direction: column;
+       right: 16px;
+    
+     bottom: 18px;
+     overflow-y: scroll;
+     overflow-x: hidden;
+
+     flex-direction: column;
+    }
+    
+    .container1{
+        display: flex;
+        flex-direction: column;
+    }
+    .syn{
+        font-size: 12px;
+    }
+    .second1{
+        width: 310px;
+        padding: 5px;
+
+        overflow-x: hidden;
+    }
+
+    .search{
+      flex-direction: row;
+
+    }
+  .first{
+    width: 295px;
+    padding: 14px;
+    gap: 4px;
+   
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+ 
+  }
+  .title{
+    height: 40px;
+    font-size: small;
+   
+    margin-bottom: 0px;
+  }
+  .first >h2 {
+    font-size: 1px;
+    
+  }
+  .first >img{
+    height: 300px;
+    width: 250px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+ .anime-image{
+    width: 300px;
+ }
+
+   .btn, .inp {
+        height: 35px;
+        width: 80px;
+        font-size: small;
+    }
+
+    .bgm {
+        height: auto;
+        width: 100%;
+    }
+
+    .airing{
+       font-size:xx-small;
+      
+    }
+
+    .whole {
+        top: 50%;
+        transform: translate(-50%, -45%);
+    }
+    .container {
+        scrollbar-width: none;
+    }
+    
+  .second1{
+    scrollbar-width: none; 
+  }
+  .post{
+    scrollbar-width: none; 
+  }
+}
