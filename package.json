@@ -2,7 +2,6 @@
   "name": "animerandom",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://praveenzoro.github.io/AnimeInfo/",
   "type": "module",
   "scripts": {
     "dev": "vite",
